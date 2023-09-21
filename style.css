@@ -32,20 +32,12 @@ body {
 section {
   padding: calc(6em + 5vw) 5vw 8vw 5vw;
   /* ! Everything below is needed ! */
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   min-height: 100vh;
   width: 100%;
   background: var(--bgcolor);
-}
-
-section:target { /* Show section */
-  display: block;
-}
-
-section#home { /* Show #home by default */
-  display: block;
 }
 
 /* ------- Header ------- */
@@ -93,7 +85,7 @@ h2, h3, h4 {
 }
 
 p, ul, ol, article {
-  max-width: 60ch; /* Limit line-length to 60 characters */
+  max-width: 90ch; /* Limit line-length to 60 characters */
   margin-bottom: .6em;
 }
 
@@ -228,6 +220,19 @@ figure figcaption {
   opacity: .7;
 }
 
+/* Figures */
+
+figure#me {
+  margin: 0 0 2em 2em;
+  float: right;
+}
+
+figure#me figcaption {
+  margin: 0.8em 0 0 0;
+  font-size: .85em;
+  opacity: .7;
+}
+
 /* Responsive video embeds */
 
 figure.video {
@@ -247,7 +252,7 @@ figure.video iframe, figure.video object, figure.video embed {
   visibility: hidden; /* so loading="lazy" should work? */
 }
 
-section:target iframe {
+section iframe {
   visibility: visible;
 }
 
@@ -421,7 +426,7 @@ article time {
   100% { transform: rotate(360deg); }
 }
 
-.lightbox:target:after { /* × to close */
+.lightbox:target:after { /* Ã— to close */
   content: "\00D7";
   position: fixed;
   font-size: 2em;
