@@ -1,0 +1,14 @@
+{
+    "name": "@PRdotC",
+    "short_name": "@PRdotC",
+    "icons": [
+        {
+            "src": "/android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#00ff00",
+    "background_color": "#00ff00",
+    "display": "standalone"
+}
