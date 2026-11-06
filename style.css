@@ -81,6 +81,7 @@ a:hover {
 .page-title {
   font-size: 1em;
   margin: 0 0 1em 0;
+  border: 0;
 }
 
 h2.resume {
@@ -264,6 +265,10 @@ figure#me {
   float: right;
 }
 
+figure#me img {
+  width: 400px;
+}
+
 figure#me figcaption {
   margin: 0.8em 0 0 0;
   font-size: .85em;
@@ -426,6 +431,10 @@ article time {
 
 @media only screen and (max-width: 540px) {
   nav { width: 100%; } /* Fix for older webkit versions */
+
+  figure#me img {
+    width: min(42vw, 180px);
+  }
 }
 
 /* ------- Print ------- */
