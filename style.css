@@ -267,7 +267,7 @@ figure#me {
 }
 
 figure#me img {
-  width: 400px;
+  width: clamp(200px, 30vw, 400px);
 }
 
 figure#me figcaption {
